@@ -29,44 +29,22 @@ tensorboard --logdir=/your_path/CVL/runs
 ```
 
 
-# Git 使用指令教程
-
-## 1. 环境配置 (Config)
 > 作用：告诉 Git 你是谁。这台机器上所有的仓库默认都会使用这个身份。
 
-* **设置用户名**
+* **1.设置用户名**
     ```bash
     git config --global user.name "YaoweiLiu"
     ```
 
-* **设置邮箱**
+* **2.设置邮箱**
     ```bash
     git config --global user.email "your_email@example.com"
     ```
 
-## 2. 日常开发流程 (Workflow)
-
-### 第一步：检查状态
-检查还有没有没提交的文件，确认当前分支。
-```bash
-git status
-
-
-
-git使用指令教程
-
-# 1. 设置 Git 全局用户名
-# 作用：告诉 Git 你是谁。以后的每次提交都会署上这个名字。
-# "--global" 表示这台机器上所有的 Git 仓库默认都用这个名字。
-git config --global user.name "YaoweiLiu"
-
-# 2. 设置 Git 全局邮箱
-# 作用：设置你的联系方式。GitHub 会根据这个邮箱将代码提交记录关联到你的 GitHub 头像和账号上。
-git config --global user.email "lyw5208@mail.ustc.edu.cn"
-
-# 3. 初始化本地仓库
-# 作用：在当前文件夹下创建一个隐藏的 `.git` 目录，把这个普通文件夹变成一个 Git 可以管理的仓库。
-git init
+* **3.初始化本地仓库**
+    ```bash
+    git init 在当前文件夹下创建一个隐藏的 `.git` 目录，把这个普通文件夹变成一个 Git 可以管理的仓库
+    ```
 
 # 4. 添加所有文件到暂存区
 # 作用：告诉 Git，“注意这些文件的变化”。"." 代表当前目录下的所有文件。

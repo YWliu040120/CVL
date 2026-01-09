@@ -47,39 +47,49 @@ tensorboard --logdir=/your_path/CVL/runs
     git init
     ```
 
-# 4. 添加所有文件到暂存区
-# 作用：告诉 Git，“注意这些文件的变化”。"." 代表当前目录下的所有文件。
-# 这是提交代码前的准备步骤（相当于把要寄的信放进信封）。
-git add .
+* **4. 添加所有文件到暂存区**
+    ```bash 
+    告诉 Git，“注意这些文件的变化”。"." 代表当前目录下的所有文件。
+    git add .
+    ```
 
-# 5. 提交文件到本地仓库
-# 作用：将暂存区的文件正式保存到本地的历史记录中。
-# "-m" 后面跟的是提交说明（Message），这里写的是“Initial commit”（初次提交）。
-# （相当于把信封封口并盖上邮戳，投进本地邮箱）。
-git commit -m "Initial commit"
+* **5. 提交文件到本地仓库**
+    ```bash 
+    将暂存区的文件正式保存到本地的历史记录中。
+    git commit -m "Initial commit"
+    ```
 
-# 6. 关联远程仓库
-# 作用：给本地仓库添加一个远程地址，起个别名叫 "origin"。
-# 以后不需要每次输入长长的 URL，直接用 "origin" 代指这个 GitHub 仓库。
-git remote add origin https://github.com/YWliu040120/CVL.git
+* **6. 关联远程仓库**
+    ```bash 
+    给本地仓库添加一个远程地址，起个别名叫 "origin"。
+    git remote add origin https://github.com/YWliu040120/CVL.git
+    ```
 
-# 7. 创建并切换到 main 分支
-# 作用：创建一个名为 "main" 的新分支，并立即切换过去。
-# GitHub 现在默认的主分支叫 "main"（以前叫 master），为了保持一致，这里手动指定分支名。
-git checkout -b main
+* **7. 创建并切换到 main 分支**
+    ```bash 
+    创建一个名为 "main" 的新分支，并立即切换过去。
+    git checkout -b main
+    ```
 
-# 8. 查看仓库状态
-# 作用：检查一下现在还有没有没提交的文件，或者确认一下当前在哪个分支上。
-# 这是一个好习惯，用来确认一切就绪。
-git status
+* **8. 查看仓库状态**
+    ```bash 
+    检查一下现在还有没有没提交的文件，或者确认一下当前在哪个分支上。
+    git status
+    ```
 
-# 9. 推送到远程仓库
-# 作用：把本地 "main" 分支的代码上传到远程 "origin" 的 "main" 分支。
-# "-u" 的作用是建立“上游”关联，以后你再推代码只需输入 "git push" 即可，不用再输这么长了。
-git push -u origin main
+* **9. 推送到远程仓库**
+    ```bash 
+    把本地 "main" 分支的代码上传到远程 "origin" 的 "main" 分支。
+    git push -u origin main
+    ```
 
-#有修改后再次提交
-先git status看一下哪些文件进行了修改
-再git add 你要提交的文件
-再git commit -m "your description for your modify"
-接着git push -u origin main即可
+* **10. 修改后的提交**
+    ```bash 
+    先git status看一下哪些文件进行了修改
+    再git add 你要提交的文件
+    再git commit -m "your description for your modify"
+    接着git push -u origin main即可
+    ```
+
+
+

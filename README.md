@@ -42,8 +42,9 @@ tensorboard --logdir=/your_path/CVL/runs
     ```
 
 * **3.初始化本地仓库**
-    ```bash
-    git init 在当前文件夹下创建一个隐藏的 `.git` 目录，把这个普通文件夹变成一个 Git 可以管理的仓库
+    ```bash 
+    在当前文件夹下创建一个隐藏的 `.git` 目录，把这个普通文件夹变成一个 Git 可以管理的仓库
+    git init
     ```
 
 # 4. 添加所有文件到暂存区

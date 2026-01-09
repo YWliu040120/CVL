@@ -27,6 +27,32 @@ To monitor training progress and visualize the loss and evaluation metrics, run:
 ```
 tensorboard --logdir=/your_path/CVL/runs
 ```
+
+
+# Git 使用指令教程
+
+## 1. 环境配置 (Config)
+> 作用：告诉 Git 你是谁。这台机器上所有的仓库默认都会使用这个身份。
+
+* **设置用户名**
+    ```bash
+    git config --global user.name "YaoweiLiu"
+    ```
+
+* **设置邮箱**
+    ```bash
+    git config --global user.email "your_email@example.com"
+    ```
+
+## 2. 日常开发流程 (Workflow)
+
+### 第一步：检查状态
+检查还有没有没提交的文件，确认当前分支。
+```bash
+git status
+
+
+
 git使用指令教程
 
 # 1. 设置 Git 全局用户名
@@ -75,5 +101,6 @@ git push -u origin main
 
 #有修改后再次提交
 先git status看一下哪些文件进行了修改
+再git add 你要提交的文件
 再git commit -m "your description for your modify"
 接着git push -u origin main即可

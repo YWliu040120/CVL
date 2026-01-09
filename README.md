@@ -74,3 +74,6 @@ git status
 git push -u origin main
 
 #有修改后再次提交
+先git status看一下哪些文件进行了修改
+再git commit -m "your description for your modify"
+接着git push -u origin main即可
